@@ -1,0 +1,33 @@
+{
+	"name": "zmcms/website_commercials",
+	"description": "Modu reklamowy w serwisie ZMCMS",
+	"authors": [
+		{
+		"name": "Piotr Szkudlarek",
+		"email": "pszkudlarek@zoltanmultimedia.pl"
+		}
+	],
+	"autoload": {
+		"psr-4": {
+			"Zmcms\\WebsiteCommercials\\": "src/",
+			"Zmcms\\WebsiteCommercials\\Backend\\Controllers\\": "src/backend/controllers/",
+			"Zmcms\\WebsiteCommercials\\Backend\\Db\\": "src/backend/db/",
+			"Zmcms\\WebsiteCommercials\\Backend\\Middleware\\": "src/backend/middleware/",
+			"Zmcms\\WebsiteCommercials\\Backend\\Routes\\": "src/backend/routes/",
+			"Zmcms\\WebsiteCommercials\\Frontend\\Controllers\\": "src/frontend/controllers/",
+			"Zmcms\\WebsiteCommercials\\Frontend\\Db\\": "src/frontend/db/",
+			"Zmcms\\WebsiteCommercials\\Frontend\\Middleware\\": "src/frontend/middleware/",
+			"Zmcms\\WebsiteCommercials\\Frontend\\Routes\\": "src/frontend/routes/",
+			"Zmcms\\WebsiteCommercials\\Migrations\\": "src/migrations/"
+		},
+		"files": ["src/helpers.php"]
+		},
+		"extra": {
+			"laravel": {
+			"providers": [
+				"Zmcms\\WebsiteCommercials\\ZmcmsWebsiteCommercialsServiceProvider"
+			]
+		}
+	},
+	"require": {}
+}
